@@ -1,0 +1,19 @@
+<header>
+    My site header
+</header>
+<hr>
+<nav>
+    <a href="/">Start</a> | <a href="/about">Om</a>
+ </nav>
+
+ <!-- blogginlägg -->
+
+ <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <hr>
